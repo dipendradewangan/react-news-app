@@ -31,7 +31,6 @@ const topHeadlinesSlice = createSlice({
         builder.addCase(fetchTopHeadlinesAsync.fulfilled, (state, action)=>{
             state.status = 'idle'
             state.newsData = action.payload
-            state.totalNews = action.payload.length
         } )
     }
 })
